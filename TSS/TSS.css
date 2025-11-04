@@ -1,0 +1,86 @@
+h1 {
+  color: yellow;
+  font-size: 90px;
+  text-align: center;
+  transition: font-size 1s ease-in, color 1s ease-in;
+}
+h1:hover {
+  font-size: 110px;
+  color: magenta;
+  transform: translateX(0px);
+  transform: rotate(360deg);
+  transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+h2 {
+  color: rgb(173, 241, 36);
+  font-style: italic;
+  font-size: 50px;
+  text-align: center;
+}
+h3 {
+  color: rgb(194, 8, 194);
+  font-size: 30px;
+  text-align: center;
+}
+h4 {
+  color: rgb(173,241,36)
+}
+li:hover {
+  background-color: magenta;
+}
+body {
+  background: radial-gradient(purple 20%, cyan);
+}
+blockquote {
+  color: #2d053b;
+  font-size: larger;
+}
+input, select, textarea, button {
+  background-color: magenta;
+}
+button:hover {
+  background-color: rgb(173, 241, 36);
+  color: blue;
+}
+img {
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+  border: 20px ridge magenta;
+  transition: border 3s;
+}
+@media (max-width: 800px) {
+ img {
+  width: 15em;
+  border: 20px groove yellow;
+ }
+}
+ /*why does adding this 2nd size variation un-center my contact info and schools?*/
+@media (max-width: 600px) {
+ img {
+  width: 10em;
+}
+}
+#contact {
+  margin:auto;
+  border: none;
+  width: 14em
+}
+a {
+  color:rgb(173, 241, 36)
+}
+a:hover {
+  color: aqua ;
+}
+table {
+  margin: auto;
+}
+#schools {
+  margin: auto;
+  width: 38em;
+  margin-bottom: 5%;
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  height: 4em ;
+}
